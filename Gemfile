@@ -32,8 +32,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :test, :development do
+  gem 'rspec-rails', '~> 2.0'
+  gem 'cucumber-rails'#, '0.3.2' 
+  gem 'webrat'#, '0.7.2'
+end
+
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'
